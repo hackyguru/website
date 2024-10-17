@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import BlogCard from '@/components/ui/blog-card';
 import FilterBlogPosts from '@/components/ui/filter-blog';
-import { getSortedPostsData, getAllTags } from '../../lib/getPosts';
 import { Spotlight } from '@/components/ui/spotlight';
 import EndFooter from '@/components/ui/end-footer';
 import Scramble from '@/components/hooks/scramble';
 import { Button } from "@/components/ui/button";
+import { getSortedPostsData, getAllTags } from '../../lib/getPosts';
 
 import {
   Popover,

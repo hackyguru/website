@@ -1,18 +1,15 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
+import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/prism';
-import { getSortedPostsData, getAllTags } from '../../lib/getposts';
-import Head from 'next/head';
-
-import Scramble from '@/components/hooks/scramble';
+import { getSortedPostsData } from '../../lib/posts.server';
 import { Mail } from 'lucide-react';
+import Scramble from '@/components/hooks/scramble';
 import EndFooter from '@/components/ui/end-footer';
 
 export async function getStaticPaths() {
-  const paths = getSortedPostsData().map((post) => ({
+  const posts = await getSortedPostsData();
+  const paths = posts.map((post) => ({
     params: { slug: post.slug },
   }));
 
@@ -23,27 +20,27 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postsDirectory = path.join(process.cwd(), 'blog-content');
-  const fullPath = path.join(postsDirectory, `${params.slug}.md`);
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
-  const { data, content } = matter(fileContents);
+  const posts = await getSortedPostsData();
+  const post = posts.find(p => p.slug === params.slug);
+  
+  if (!post) {
+    return {
+      notFound: true,
+    };
+  }
 
   return {
     props: {
-      post: {
-        ...data,
-        content,
-      },
+      post,
     },
   };
 }
 
 export default function BlogPostPage({ post }) {
-  const { title, date, author, tags, content, coverImage } = post;
+  const { title, date, author, content, coverImage } = post;
 
   const customRenderers = {
-    code(code) {
-      const { className, children } = code;
+    code({ className, children }) {
       const language = className ? className.split('-')[1] : 'text';
       return (
         <SyntaxHighlighter
@@ -55,7 +52,7 @@ export default function BlogPostPage({ post }) {
       );
     },
   };
-  
+
   return (
     <div>
       <Head>
@@ -94,12 +91,17 @@ export default function BlogPostPage({ post }) {
         </article>
         <div className='p-10'>
           <div className='border p-5 flex justify-between items-center'>
-          <h1
-  className="text-xl font-mono flex">{"/"}
-  <Scramble  text="say hi " /></h1>
-  <a href='https://x.com/hackyguru' className='bg-white text-black p-3 flex space-x-3 items-center'>
-    <Mail className='w-5 h-5' />
-   <h1>Reach out</h1> </a>
+            <h1 className="text-xl font-mono flex">
+              {"/"}
+              <Scramble text="say hi " />
+            </h1>
+            <a 
+              href='https://x.com/hackyguru' 
+              className='bg-white text-black p-3 flex space-x-3 items-center'
+            >
+              <Mail className='w-5 h-5' />
+              <h1>Reach out</h1>
+            </a>
           </div>
         </div>
         <EndFooter />

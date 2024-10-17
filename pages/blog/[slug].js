@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/prism';
-import { getSortedPostsData, getAllTags } from '../../lib/getPosts';
+import { getSortedPostsData, getAllTags } from '../../lib/getposts';
 import Head from 'next/head';
 
 import Scramble from '@/components/hooks/scramble';

@@ -6,7 +6,7 @@ import { Spotlight } from '@/components/ui/spotlight';
 import EndFooter from '@/components/ui/end-footer';
 import Scramble from '@/components/hooks/scramble';
 import { Button } from "@/components/ui/button";
-import { getSortedPostsData, getAllTags } from '../../lib/getPosts';
+import { getSortedPostsData, getAllTags } from '../../lib/getposts'
 
 import {
   Popover,

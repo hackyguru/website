@@ -44,17 +44,18 @@ export default function BlogPostPage({ post }) {
   const customRenderers = {
     code(code) {
       const { className, children } = code;
-      const language = className.split('-')[1];
+      const language = className ? className.split('-')[1] : 'text';
       return (
         <SyntaxHighlighter
           style={dracula}
           language={language}
-          children={children}
-        />
+        >
+          {children}
+        </SyntaxHighlighter>
       );
     },
   };
-
+  
   return (
     <div>
       <Head>

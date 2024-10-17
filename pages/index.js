@@ -94,7 +94,7 @@ export default function SpotlightPreview() {
           <div className="p-5 border mt-5 border-gray-600 flex justify-between items-start mb-3">
             <div className="space-y-5">
               <h1>Bachelor of Computer Engineering - Sri Krishna College of Engineering and Technology, India</h1>
-              <h4 className="text-sm text-gray-400">Graduated as the 'best outgoing student - Batch of 2023' at Sri Krishna College of Engineering and Technology, India</h4>
+              <h4 className="text-sm text-gray-400">Graduated as the &lsquo;best outgoing student - Batch of 2023&lsquo; at Sri Krishna College of Engineering and Technology, India</h4>
             </div>
             <img width={50} height={50} src="https://upload.wikimedia.org/wikipedia/commons/a/aa/SKI-Coimbatore-Logo.webp" />
           </div>
@@ -155,13 +155,13 @@ export default function SpotlightPreview() {
                   {"> "} I received honorary recognitions from 4 nation states till date
                 </h4>
                 <h4>
-                  {"> "} I've presented keynote speeches and hosted workshops at 25+ conferences
+                  {"> "} I&lsquo;ve presented keynote speeches and hosted workshops at 25+ conferences
                 </h4>
                 <h4>
-                  {"> "} I graduated my Bachelors in CS Engineering with 'the best outgoing student' award
+                  {"> "} I graduated my Bachelors in CS Engineering with &lsquo;the best outgoing student&lsquo; award
                 </h4>
                 <h4>
-                  {"> "} I've worked in asynchronous remote work environments and never been to an physical office
+                  {"> "} I&lsquo;ve worked in asynchronous remote work environments and never been to an physical office
                 </h4>
                 <h4>
                   {"> "} I wrote technical documentation for projects with over 20k developers in their ecosystem 
@@ -189,7 +189,7 @@ export default function SpotlightPreview() {
               </div>
               <div className="text-md text-gray-400 mt-5 space-y-5">
                 <h4>
-                  {"> "} I travel as much as I can. I've set foot in 35 countries at the age of 22
+                  {"> "} I travel as much as I can. I&lsquo;ve set foot in 35 countries at the age of 22
                 </h4>
                 <h4>
                   {"> "} I try to feed strays and pat pat everytime i come across a paw buddy
@@ -198,7 +198,7 @@ export default function SpotlightPreview() {
                   {"> "} I try to live as local as possible when i visit new places
                 </h4>
                 <h4>
-                  {"> "} I love riding cruiser bikes in mountains & I ride my harley when i'm back home
+                  {"> "} I love riding cruiser bikes in mountains & I ride my harley when i&lsquo;m back home
                 </h4>
                 <h4>
                   {"> "} I would not say no to people who are in need of food
@@ -207,7 +207,7 @@ export default function SpotlightPreview() {
                   {"> "} I strongly belive that equality and equity are different things in a society
                 </h4>
                 <h4>
-                  {"> "} I give and take respect regardless of the person's social profile
+                  {"> "} I give and take respect regardless of the person&lsquo;s social profile
                 </h4>
               </div>
               <h1
@@ -235,7 +235,7 @@ export default function SpotlightPreview() {
                   {"> "} Deeper your faith, quieter you become
                 </h4>
                 <h4>
-                  {"> "} I'm deeply spiritual but i do not associate myself with a specific religious belief
+                  {"> "} I&lsquo;m deeply spiritual but i do not associate myself with a specific religious belief
                 </h4>
               </div>
               <h1

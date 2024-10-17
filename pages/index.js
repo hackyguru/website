@@ -270,95 +270,80 @@ export default function SpotlightPreview() {
 
 export const pictures = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
+    title: "Denver, USA",
     thumbnail:
       "/portfolio1.png",
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
+    title: "Rome, Italy",
     thumbnail:
       "/portfolio2.png",
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
+    title: "James bond island, Thailand",
     thumbnail:
       "/portfolio3.png",
   },
 
   {
-    title: "Editorially",
-    link: "https://editorially.org",
+    title: "Cape Cod, USA",
     thumbnail:
       "/portfolio4.png",
   },
   {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
+    title: "Phuket, Thailand",
     thumbnail:
       "/portfolio5.png",
   },
   {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
+    title: "Athens, Greece",
     thumbnail:
       "/portfolio6.png",
   },
 
   {
-    title: "Algochurn",
-    link: "https://algochurn.com",
+    title: "Istanbul, Turkey",
     thumbnail:
       "/portfolio7.png",
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
+    title: "Kasol, India",
     thumbnail:
       "/portfolio8.png",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
+    title: "Chiang Rai, Thailand",
     thumbnail:
       "/portfolio9.png",
   },
   {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
+    title: "Lisbon, Portugal",
     thumbnail:
       "/portfolio10.png",
   },
   {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
+    title: "Munnar, India",
     thumbnail:
       "/portfolio11.png",
   },
 
   {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
+    title: "Athens, Greece",
     thumbnail:
       "/portfolio12.png",
   },
   {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
+    title: "Lisbon, Portugal",
     thumbnail:
       "/portfolio13.png",
   },
   {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
+    title: "Mount Fuji, Japan",
     thumbnail:
       "/portfolio14.png",
   },
   {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
+    title: "Chiang Mai, Thailand",
     thumbnail:
       "/portfolio15.png",
   },

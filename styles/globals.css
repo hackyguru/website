@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=La+Belle+Aurore&family=League+Script&family=Meddon&family=Reenie+Beanie&family=Whisper&family=WindSong:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .prose {
+    @apply text-gray-300;
+  }
+
+  .prose h1 {
+    @apply text-3xl font-bold mb-4;
+    @apply text-gray-300;
+  }
+
+  .prose h2 {
+    @apply text-2xl font-bold mb-3;
+    @apply text-gray-300;
+  }
+
+  .prose h3 {
+    @apply text-xl font-bold mb-2;
+    @apply text-gray-300;
+  }
+
+  .prose p {
+    @apply mb-4;
+    @apply text-gray-300;
+  }
+
+  .prose ul {
+    @apply list-disc pl-5 mb-4;
+    @apply text-gray-300;
+  }
+
+  .prose ol {
+    @apply list-decimal pl-5 mb-4;
+    @apply text-gray-300;
+
+  }
+
+  .prose blockquote {
+    @apply border-l-4 border-gray-300 pl-4 mb-4 italic;
+    @apply text-gray-300;
+
+
+  }
+
+  .prose table {
+    @apply w-full mb-4;
+    @apply text-gray-300;
+
+  }
+
+  .prose th {
+    @apply bg-gray-200 px-4 py-2 font-bold text-left;
+    @apply text-gray-300;
+
+  }
+
+  .prose td {
+    @apply border px-4 py-2;
+    @apply text-gray-300;
+
+  }
+}
+
+.handwriting {
+  font-family: "League Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pixel {
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.written {
+  font-family: "Reenie Beanie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-700 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(24, 24, 23);
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.grainy {
+
+}
+
+
+.grainy img {
+
+}
+
+.grainy::before {
+  z-index: 10;
+  position: fixed;
+  content: '';
+  height: 300%;
+  width: 300%;
+  top: -100%;
+  left: -50%;
+  pointer-events: none;
+  user-select: none;
+  background-image: url('http://momentsingraphics.de/Media/BlueNoise/WhiteNoiseDithering.png');
+  opacity: 0.15;
+  animation: noise 8s steps(10) infinite;
+}
+
+@keyframes noise {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(-5%, 25%); }
+  50% { transform: translate(-15%, 10%); }
+  60% { transform: translate(15%, 0%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(3%, 35%); }
+  90% { transform: translate(-10%, 10%); }
+}

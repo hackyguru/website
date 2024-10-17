@@ -9,7 +9,7 @@ import EndFooter from '@/components/ui/end-footer'
 export default function Talks() {
   return (<>
                     <Head>
-        <title>Guru's Talks</title>
+        <title>Guru&apos;s Talks</title>
       <meta name="description" content="Discover all the talks and workshops hightlighting Kumaraguru, who has shared insights in 25+ conferences around the world" />
       </Head>
     <div className=" bg-black/[0.96] grainy space-y-6 antialiased bg-grid-white/[0.02] relative overflow-hidden min-h-screen">

@@ -56,7 +56,7 @@ export default function BlogPostPage({ post }) {
   };
 
   return (
-    <>
+    <div>
       <Head>
         <title>{title}</title>
       </Head>
@@ -103,6 +103,6 @@ export default function BlogPostPage({ post }) {
         </div>
         <EndFooter />
       </div>
-    </>
+    </div>
   );
 }

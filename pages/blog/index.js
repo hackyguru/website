@@ -64,7 +64,7 @@ export default function BlogIndex({ allPostsData, allTags }) {
   return (
     <div className="min-h-screen flex flex-col">
       <Head>
-        <title>Guru's Blog</title>
+        <title>Guru&apos;s Blog</title>
         <meta name="description" content="Discover the blog articles authored by Kumaraguru across various platforms. This includes technical deep dive ins, tutorials, workshops and more" />
       </Head>
       <div className="flex-grow w-full grainy md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">

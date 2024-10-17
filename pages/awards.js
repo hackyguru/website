@@ -9,7 +9,7 @@ import EndFooter from '@/components/ui/end-footer'
 export default function Awards() {
   return (<>
                     <Head>
-        <title>Guru's Awards</title>
+        <title>Guru&apos;s Awards</title>
       <meta name="description" content="Discover Kumaraguru's hall of fame which has a collection of all the hackathon victories and other 50+ achievements" />
       </Head>
     <div className=" bg-black/[0.96] grainy space-y-6 antialiased bg-grid-white/[0.02] relative overflow-hidden min-h-screen">  

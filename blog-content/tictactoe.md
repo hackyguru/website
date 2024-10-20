@@ -1,6 +1,6 @@
 ---
 title: "Building a Tic-Tac-Toe Game with Waku"
-description: "In this beginner-friendly tutorial, we will be building a basic TicTacToe game that can be played by two players who are connected using Waku"
+description: "Tutorial for building a basic TicTacToe game that can be played by two players who are connected using Waku"
 date: "2024-01-22"
 author: "guru"
 tags: ["Web3","Technical","Privacy"]

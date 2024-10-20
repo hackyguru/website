@@ -1,6 +1,6 @@
 ---
 title: "Exploring Codex: What Are The Use Cases For A P2P, Durable Data Engine?"
-description: "Storage is a core requirement of any application, whether web2 or web3. Explore use cases where Codex can be implemented."
+description: "Explore use cases where Codex can be implemented."
 date: "2024-07-30"
 author: "guru"
 tags: ["Web3","Technical","Privacy"]

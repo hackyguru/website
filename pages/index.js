@@ -24,79 +24,79 @@ export default function SpotlightPreview() {
         />
       </div>
       <HeroParallax pictures={pictures} />
-      <div className="px-5 md:px-20 py-80 md:py-20">
+      <div className="py-80 md:py-20">
         <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="gray"
         />
-        <div id="work" className="p-10 mt-40">
+        <div id="work" className="p-5 md:p-10">
           <h1 className="text-3xl">about my work</h1>
           <hr className="opacity-50 my-5" />
           <h1
             className="text-xl font-mono mt-10 flex">{"/"}
             <Scramble text="current roles" /></h1>
-          <div className="p-5 border mt-5 border-gray-600 flex justify-between items-start mb-3">
-            <div className="space-y-5">
+          <div className="p-5 border mt-5 border-gray-600 mb-3">
+          <div className="flex justify-between items-start space-x-3">
               <h1>Developer Relations @ Codex {"(Jan, 2023 - now)"}</h1>
-              <h4 className="text-sm text-gray-400">Codex is the storage/archival layer of the Logos technology stack which is powered by a censorship-resistant Decentralised Durability Engine</h4>
-            </div>
             <img width={50} height={50} src="https://codex.storage/theme/image/logo.svg" />
+            </div>
+              <h4 className="text-sm text-gray-400 mt-5 md:mt-0 w-full">Codex is the storage/archival layer of the Logos technology stack which is powered by a censorship-resistant Decentralised Durability Engine</h4>
           </div>
-          <div className="p-5 border mt-5 border-gray-600 flex justify-between items-start mb-3">
-            <div className="space-y-5">
+          <div className="p-5 border mt-5 border-gray-600 mb-3">
+          <div className="flex justify-between items-start space-x-3">
               <h1>Developer Relations @ Waku {"(Jan, 2023 - now)"}</h1>
-              <h4 className="text-sm text-gray-400">Waku is a family of privacy preserving, decentralised and DoS resistant web3 communications protocols powering the communication layer of Logos technology stack</h4>
-            </div>
             <img width={50} height={50} src="https://waku.org/theme/image/logo.svg" />
-          </div>
-          <div className="p-5 border mt-5 border-gray-600 flex justify-between items-start mb-3">
-            <div className="space-y-5">
-              <h1>Core contributor @ Logos {"(Jan, 2023 - now)"}</h1>
-              <h4 className="text-sm text-gray-400">Logos is a foundational stack for building an internet that can evolve into network states that empower uses by upholding civil liberties</h4>
             </div>
+            <h4 className="text-sm text-gray-400 mt-5 md:mt-0 w-full">Waku is a family of privacy preserving, decentralised and DoS resistant web3 communications protocols powering the communication layer of Logos technology stack</h4>
+          </div>
+          <div className="p-5 border mt-5 border-gray-600 mb-3">
+          <div className="flex justify-between items-start space-x-3">
+              <h1>Core contributor @ Logos {"(Jan, 2023 - now)"}</h1>
             <img width={50} height={50} src="https://logos.co/theme/image/logo.svg" />
+            </div>
+              <h4 className="text-sm text-gray-400 mt-5 md:mt-0 w-full">Logos is a foundational stack for building an internet that can evolve into network states that empower uses by upholding civil liberties</h4>
           </div>
           <h1
             className="text-xl font-mono mt-10 flex">{"/"}
             <Scramble text="previous roles" /></h1>
-          <div className="p-5 border mt-5 border-gray-600 flex justify-between items-start mb-3">
-            <div className="space-y-5">
+            <div className="p-5 border mt-5 border-gray-600 mb-3">
+            <div className="flex justify-between items-start space-x-3">
               <h1>Developer Relations @ WalletConnect</h1>
-              <h4 className="text-sm text-gray-400">WalletConnect helps users to seamlessly connect dapps with web3 wallets with an engagging web3 user experience</h4>
-            </div>
             <img width={50} height={50} src="https://seeklogo.com/images/W/walletconnect-logo-EE83B50C97-seeklogo.com.png" />
+            </div>
+            <h4 className="text-sm text-gray-400 mt-5 md:mt-0 w-full">WalletConnect helps users to seamlessly connect dapps with web3 wallets with an engagging web3 user experience</h4>
           </div>
-          <div className="p-5 border mt-5 border-gray-600 flex justify-between items-start mb-3">
-            <div className="space-y-5">
+          <div className="p-5 border mt-5 border-gray-600 mb-3">
+          <div className="flex justify-between items-start space-x-3">
               <h1>Community Developer Advocate @ Protocol Labs</h1>
-              <h4 className="text-sm text-gray-400">Protocol Labs are the builders of groundbreaking distributed technologies like IPFS, Filecoin, Libp2p and much more</h4>
-            </div>
             <img width={50} height={50} src="https://cdn.filepicker.io/api/file/AUKOvpYVS3GtJ7xp1NMV" />
-          </div>
-          <div className="p-5 border mt-5 border-gray-600 flex justify-between items-start mb-3">
-            <div className="space-y-5">
-              <h1>Web Developer Intern @ Ministry of Education, India</h1>
-              <h4 className="text-sm text-gray-400">Protocol Labs are the builders of groundbreaking distributed technologies like IPFS, Filecoin, Libp2p and much more</h4>
             </div>
+              <h4 className="text-sm text-gray-400 mt-5 md:mt-0 w-full">Protocol Labs are the builders of groundbreaking distributed technologies like IPFS, Filecoin, Libp2p and much more</h4>
+          </div>
+          <div className="p-5 border mt-5 border-gray-600 mb-3">
+          <div className="flex justify-between items-start space-x-3">
+              <h1>Web Developer Intern @ Ministry of Education, India</h1>
             <img width={50} height={50} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIUfmMmAnRk_Zz3fhgWxDaE_caY_i0AAG6AYaq3uK7WQ&s" />
+            </div>
+              <h4 className="text-sm text-gray-400 mt-5 md:mt-0 w-full">Protocol Labs are the builders of groundbreaking distributed technologies like IPFS, Filecoin, Libp2p and much more</h4>
           </div>
 
           <h1
             className="text-xl font-mono mt-10 flex">{"/"}
             <Scramble text="academia" /></h1>
-          <div className="p-5 border mt-5 border-gray-600 flex justify-between items-start mb-3">
-            <div className="space-y-5">
+            <div className="p-5 border mt-5 border-gray-600 mb-3">
+            <div className="flex justify-between items-start space-x-3">
               <h1>Master of Science in Emerging digital technologies (Blockchain) - University College London, UK</h1>
-              <h4 className="text-sm text-gray-400">Pursuing post-graduate education specializing in blockchain, data science and privacy preserving technologies at University College London</h4>
-            </div>
             <img width={50} height={50} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaEL7XDjBhifKhuDkuxs25pwGw6F01SMBnGA&s" />
-          </div>
-          <div className="p-5 border mt-5 border-gray-600 flex justify-between items-start mb-3">
-            <div className="space-y-5">
-              <h1>Bachelor of Computer Engineering - Sri Krishna College of Engineering and Technology, India</h1>
-              <h4 className="text-sm text-gray-400">Graduated as the &lsquo;best outgoing student - Batch of 2023&lsquo; at Sri Krishna College of Engineering and Technology, India</h4>
             </div>
+            <h4 className="text-sm text-gray-400 mt-5 md:mt-0 w-full">Pursuing post-graduate education specializing in blockchain, data science and privacy preserving technologies at University College London</h4>
+          </div>
+          <div className="p-5 border mt-5 border-gray-600 mb-3">
+          <div className="flex justify-between items-start space-x-3">
+              <h1>Bachelor of Computer Engineering - Sri Krishna College of Engineering and Technology, India</h1>
             <img width={50} height={50} src="https://upload.wikimedia.org/wikipedia/commons/a/aa/SKI-Coimbatore-Logo.webp" />
+            </div>
+              <h4 className="text-sm text-gray-400 mt-5 md:mt-0 w-full">Graduated as the &lsquo;best outgoing student - Batch of 2023&lsquo; at Sri Krishna College of Engineering and Technology, India</h4>
           </div>
 
 
@@ -109,7 +109,7 @@ export default function SpotlightPreview() {
               <div className="pr-10 py-5">
                 <img src="expertise.png" />
               </div>
-              <div className="text-md text-gray-400 mt-5 space-y-5">
+              <div className="text-sm text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} Full stack web3 development (serverless & blockchain based)
                 </h4>
@@ -144,7 +144,7 @@ export default function SpotlightPreview() {
               <div className="pr-10 py-5">
                 <img src="shills.png" />
               </div>
-              <div className="text-md text-gray-400 mt-5 space-y-5">
+              <div className="text-sm text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} Hackathon veteran. <Link className="underline" href="/awards">Winner at 50+ international hackathons {"(web2 and web3)"}</Link>
                 </h4>
@@ -175,7 +175,7 @@ export default function SpotlightPreview() {
 
         </div>
 
-        <div id="life" className="p-10">
+        <div id="life" className="p-5 md:p-10">
           <h1 className="text-3xl">my life</h1>
           <hr className="opacity-50 my-5" />
           <div className="md:flex md:justify-between">
@@ -187,7 +187,7 @@ export default function SpotlightPreview() {
               <div className="pr-10 py-5">
                 <img src="shills.png" />
               </div>
-              <div className="text-md text-gray-400 mt-5 space-y-5">
+              <div className="text-sm text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} I travel as much as I can. I&lsquo;ve set foot in 35 countries at the age of 22
                 </h4>
@@ -216,7 +216,7 @@ export default function SpotlightPreview() {
               <div className="pr-10 py-5">
                 <img src="manifesto.png" />
               </div>
-              <div className="text-md text-gray-400 mt-5 space-y-5">
+              <div className="text-sm text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} Experiences over materialism. People over beliefs. Exploration over regrets
                 </h4>
@@ -230,7 +230,7 @@ export default function SpotlightPreview() {
               <div className="pr-10 py-5">
                 <img src="faith.png" />
               </div>
-              <div className="text-md text-gray-400 mt-5 space-y-5">
+              <div className="text-sm text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} Deeper your faith, quieter you become
                 </h4>
@@ -244,7 +244,7 @@ export default function SpotlightPreview() {
               <div className="pr-10 py-5">
                 <img src="art.png" />
               </div>
-              <div className="text-md text-gray-400 mt-5 space-y-5">
+              <div className="text-sm text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} I love Manchester United, Real Madrid and I ocassionally play football
                 </h4>

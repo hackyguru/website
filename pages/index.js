@@ -13,9 +13,9 @@ export default function SpotlightPreview() {
 
   return (
     <div className="min-h-screen grainy w-full rounded-md md:items-center md:justify-center bg-black antialiased bg-dot-white/[0.1] relative overflow-hidden">
-                  <Head>
+      <Head>
         <title>Guru</title>
-      <meta name="description" content="Kumaraguru's portfolio website that illustrates his career and life. Learn more about his goals, passions and achievements" />
+        <meta name="description" content="Kumaraguru's portfolio website that illustrates his career and life. Learn more about his goals, passions and achievements" />
       </Head>
       <div className="flex justify-center mt-4">
         <Spotlight
@@ -24,18 +24,18 @@ export default function SpotlightPreview() {
         />
       </div>
       <HeroParallax pictures={pictures} />
-      <div className="px-5 md:px-20 mt-40">
+      <div className="px-5 md:px-20 py-40 md:py-20">
         <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="gray"
         />
-        <div id="work" className="p-10">
+        <div id="work" className="p-10 mt-40">
           <h1 className="text-3xl">about my work</h1>
           <hr className="opacity-50 my-5" />
           <h1
             className="text-xl font-mono mt-10 flex">{"/"}
             <Scramble text="current roles" /></h1>
-            <div className="p-5 border mt-5 border-gray-600 flex justify-between items-start mb-3">
+          <div className="p-5 border mt-5 border-gray-600 flex justify-between items-start mb-3">
             <div className="space-y-5">
               <h1>Developer Relations @ Codex {"(Jan, 2023 - now)"}</h1>
               <h4 className="text-sm text-gray-400">Codex is the storage/archival layer of the Logos technology stack which is powered by a censorship-resistant Decentralised Durability Engine</h4>
@@ -84,7 +84,7 @@ export default function SpotlightPreview() {
           <h1
             className="text-xl font-mono mt-10 flex">{"/"}
             <Scramble text="academia" /></h1>
-            <div className="p-5 border mt-5 border-gray-600 flex justify-between items-start mb-3">
+          <div className="p-5 border mt-5 border-gray-600 flex justify-between items-start mb-3">
             <div className="space-y-5">
               <h1>Master of Science in Emerging digital technologies (Blockchain) - University College London, UK</h1>
               <h4 className="text-sm text-gray-400">Pursuing post-graduate education specializing in blockchain, data science and privacy preserving technologies at University College London</h4>
@@ -164,7 +164,7 @@ export default function SpotlightPreview() {
                   {"> "} I&lsquo;ve worked in asynchronous remote work environments and never been to an physical office
                 </h4>
                 <h4>
-                  {"> "} I wrote technical documentation for projects with over 20k developers in their ecosystem 
+                  {"> "} I wrote technical documentation for projects with over 20k developers in their ecosystem
                 </h4>
                 <h4>
                   {"> "} I made my first open source contribution when I was 13

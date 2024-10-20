@@ -24,11 +24,13 @@ export default function SpotlightPreview() {
         />
       </div>
       <HeroParallax pictures={pictures} />
-      <div className="py-80 md:py-20">
+      <div className="">
         <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="gray"
         />
+        <div className="flex justify-center w-full">
+
         <div id="work" className="p-5 md:p-10">
           <h1 className="text-3xl">about my work</h1>
           <hr className="opacity-50 my-5" />
@@ -100,16 +102,16 @@ export default function SpotlightPreview() {
           </div>
 
 
-          <div className="md:flex md:justify-between">
+          <div className="md:flex md:justify-between md:space-x-4">
 
             <div className="md:w-1/2">
               <h1
                 className="text-xl font-mono mt-10 flex">{"/"}
                 <Scramble text="areas of expertise" /></h1>
-              <div className="pr-10 py-5">
-                <img src="expertise.png" />
+              <div className="py-5">
+                <img className="w-full" src="expertise.png" />
               </div>
-              <div className="text-sm md:text-md text-gray-400 mt-5 space-y-5">
+              <div className="text-sm md:text-lg text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} Full stack web3 development (serverless & blockchain based)
                 </h4>
@@ -141,10 +143,10 @@ export default function SpotlightPreview() {
               <h1
                 className="text-xl font-mono mt-10 flex">{"/"}
                 <Scramble text="key shilling points" /></h1>
-              <div className="pr-10 py-5">
-                <img src="shills.png" />
+                <div className="py-5">
+                <img className="w-full" src="shills.png" />
               </div>
-              <div className="text-sm md:text-md text-gray-400 mt-5 space-y-5">
+              <div className="text-sm md:text-lg text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} Hackathon veteran. <Link className="underline" href="/awards">Winner at 50+ international hackathons {"(web2 and web3)"}</Link>
                 </h4>
@@ -174,20 +176,22 @@ export default function SpotlightPreview() {
           </div>
 
         </div>
+        </div>
+
 
         <div id="life" className="p-5 md:p-10">
           <h1 className="text-3xl">my life</h1>
           <hr className="opacity-50 my-5" />
-          <div className="md:flex md:justify-between">
+          <div className="md:flex md:justify-between md:space-x-4">
 
             <div className="md:w-1/2">
               <h1
                 className="text-xl font-mono mt-10 flex">{"/"}
                 <Scramble text="goals and values" /></h1>
-              <div className="pr-10 py-5">
-                <img src="shills.png" />
+                <div className="py-5">
+                <img className="w-full" src="shills.png" />
               </div>
-              <div className="text-sm md:text-md text-gray-400 mt-5 space-y-5">
+              <div className="text-sm md:text-lg text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} I travel as much as I can. I&lsquo;ve set foot in 35 countries at the age of 22
                 </h4>
@@ -213,10 +217,10 @@ export default function SpotlightPreview() {
               <h1
                 className="text-xl font-mono mt-10 flex">{"/"}
                 <Scramble text="manifesto" /></h1>
-              <div className="pr-10 py-5">
-                <img src="manifesto.png" />
+                <div className="py-5">
+                <img className="w-full" src="manifesto.png" />
               </div>
-              <div className="text-sm md:text-md text-gray-400 mt-5 space-y-5">
+              <div className="text-sm md:text-lg text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} Experiences over materialism. People over beliefs. Exploration over regrets
                 </h4>
@@ -227,10 +231,10 @@ export default function SpotlightPreview() {
               <h1
                 className="text-xl font-mono mt-10 flex">{"/"}
                 <Scramble text="faith" /></h1>
-              <div className="pr-10 py-5">
-                <img src="faith.png" />
+                <div className="py-5">
+                <img className="w-full" src="faith.png" />
               </div>
-              <div className="text-sm md:text-md text-gray-400 mt-5 space-y-5">
+              <div className="text-sm md:text-lg text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} Deeper your faith, quieter you become
                 </h4>
@@ -241,10 +245,10 @@ export default function SpotlightPreview() {
               <h1
                 className="text-xl font-mono mt-10 flex">{"/"}
                 <Scramble text="sports & art" /></h1>
-              <div className="pr-10 py-5">
-                <img src="art.png" />
+                <div className="py-5">
+                <img className="w-full" src="art.png" />
               </div>
-              <div className="text-sm md:text-md text-gray-400 mt-5 space-y-5">
+              <div className="text-sm md:text-lg text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} I love Manchester United, Real Madrid and I ocassionally play football
                 </h4>

@@ -24,7 +24,7 @@ export default function SpotlightPreview() {
         />
       </div>
       <HeroParallax pictures={pictures} />
-      <div className="px-5 md:px-20 py-40 md:py-20">
+      <div className="px-5 md:px-20 py-80 md:py-20">
         <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="gray"

@@ -109,7 +109,7 @@ export default function SpotlightPreview() {
               <div className="pr-10 py-5">
                 <img src="expertise.png" />
               </div>
-              <div className="text-sm text-gray-400 mt-5 space-y-5">
+              <div className="text-sm md:text-md text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} Full stack web3 development (serverless & blockchain based)
                 </h4>
@@ -144,7 +144,7 @@ export default function SpotlightPreview() {
               <div className="pr-10 py-5">
                 <img src="shills.png" />
               </div>
-              <div className="text-sm text-gray-400 mt-5 space-y-5">
+              <div className="text-sm md:text-md text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} Hackathon veteran. <Link className="underline" href="/awards">Winner at 50+ international hackathons {"(web2 and web3)"}</Link>
                 </h4>
@@ -187,7 +187,7 @@ export default function SpotlightPreview() {
               <div className="pr-10 py-5">
                 <img src="shills.png" />
               </div>
-              <div className="text-sm text-gray-400 mt-5 space-y-5">
+              <div className="text-sm md:text-md text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} I travel as much as I can. I&lsquo;ve set foot in 35 countries at the age of 22
                 </h4>
@@ -216,7 +216,7 @@ export default function SpotlightPreview() {
               <div className="pr-10 py-5">
                 <img src="manifesto.png" />
               </div>
-              <div className="text-sm text-gray-400 mt-5 space-y-5">
+              <div className="text-sm md:text-md text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} Experiences over materialism. People over beliefs. Exploration over regrets
                 </h4>
@@ -230,7 +230,7 @@ export default function SpotlightPreview() {
               <div className="pr-10 py-5">
                 <img src="faith.png" />
               </div>
-              <div className="text-sm text-gray-400 mt-5 space-y-5">
+              <div className="text-sm md:text-md text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} Deeper your faith, quieter you become
                 </h4>
@@ -244,7 +244,7 @@ export default function SpotlightPreview() {
               <div className="pr-10 py-5">
                 <img src="art.png" />
               </div>
-              <div className="text-sm text-gray-400 mt-5 space-y-5">
+              <div className="text-sm md:text-md text-gray-400 mt-5 space-y-5">
                 <h4>
                   {"> "} I love Manchester United, Real Madrid and I ocassionally play football
                 </h4>

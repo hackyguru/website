@@ -156,12 +156,12 @@ export const Header = () => {
             <h1 className="mt-10 md:mt-0">Wish to know more?</h1>
             <div className="flex mt-5 justify-between items-center">
             <div className="flex">
-            <Link href="/#work" className=" text-xl border p-3 flex cursor-pointer">
+            <Link href="/#work" className=" text-xl border p-3 flex cursor-pointer z-50">
             <h1
   className="text-xl font-mono flex">{"/"}
   <Scramble  text="about work" /></h1>
             </Link>
-            <Link href="/#life" className="ml-5 text-xl border p-3 flex">
+            <Link href="/#life" className="ml-5 text-xl border p-3 flex z-50">
             <h1
   className="text-xl font-mono flex cursor-pointer">{"/"}
   <Scramble  text="about life" /></h1>

@@ -58,7 +58,7 @@ export default function BlogPostPage({ post }) {
       <Head>
         <title>{title}</title>
       </Head>
-      <div className="w-full">
+      <div className="w-full bg-black">
         <div className="relative h-[400px] overflow-hidden">
           <img
             alt="Cover Image"
@@ -71,7 +71,7 @@ export default function BlogPostPage({ post }) {
             }}
             width="1200"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent grainy" />
           <div className="absolute bottom-0 left-0 right-0 px-4 py-8 md:px-6 lg:px-8">
             <div className="mx-auto max-w-3xl space-y-2">
               <h1 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">

@@ -2,7 +2,7 @@
 title: "Perks of unstability & embracing changes"
 description: "Thinking loud about the recent relocation to a different country and unstability in life over the last 2 years"
 date: "2024-10-16"
-author: "Guru"
+author: "guru"
 tags: ["Life","Travel"]
 coverImage: "/blog/firstblog.png"
 ---

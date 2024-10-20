@@ -131,8 +131,8 @@ export default function BlogIndex({ allPostsData, allTags }) {
             <ChevronRight />
           </button>
         </div>
-      </div>
       <EndFooter />
+      </div>
     </div>
   );
 }

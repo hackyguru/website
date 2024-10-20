@@ -167,7 +167,8 @@ export const Header = () => {
   <Scramble  text="about life" /></h1>
             </Link>
   </div>
-            <h1 className="text-2xl opacity-60 hidden md:block font-mono">kumaraguru / குமரகுரு</h1>
+            <div className="text-2xl opacity-60 hidden md:block font-mono">
+            <Scramble  text="kumaraguru / குமரகுரு" /></div>
   </div>
         </div>
     );

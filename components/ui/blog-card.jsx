@@ -10,17 +10,17 @@ const BlogCard = ({ post }) => {
     <div className="bg-black shadow-md overflow-hidden border-gray-700 border  hover:shadow-gray-900">
       <img src={coverImage} alt={title} className="w-full h-48 object-cover" />
       <div className="p-4">
-        <h2 className="text-2xl text-white font-bold mb-2 h-16">{title}</h2>
-        <p className="text-gray-300 mb-4 h-20">{description}</p>
-        <div className="flex items-center justify-between">
+        <h2 className=" text-lg md:text-2xl text-white font-bold mb-2 h-16">{title}</h2>
+        <p className="text-gray-300 text-sm md:mb-4 h-20">{description}</p>
+        <div className="md:flex items-center justify-between">
           <div>
-            <span className="text-gray-300">{date}</span>
+            <span className="text-gray-300 text-sm">{date} - by {author}</span>
           </div>
-          <div>
+          <div className='mt-4 md:mt-0'>
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="border-gray-600 border text-gray-600 px-2 py-1 mr-2"
+                className="border-gray-600 border text-gray-600 px-2 py-1 mr-2 text-sm"
               >
                 {tag}
               </span>

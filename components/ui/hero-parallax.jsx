@@ -192,6 +192,7 @@ export const ProductCard = ({
 
             <Image
                 src={product.thumbnail}
+                priority="true"
                 loop="infinite"
                 width="400"
                 height="300"

@@ -37,7 +37,7 @@ export default function SpotlightPreview() {
         />
       </div>
       <HeroParallax pictures={pictures} />
-      <div className="">
+      <div className="mt-40">
         <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="gray"

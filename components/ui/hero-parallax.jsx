@@ -190,10 +190,12 @@ export const ProductCard = ({
             className="group/product h-60 w-[20rem] md:h-96 md:w-[30rem] relative flex-shrink-0"
         >
 
-            <img
+            <Image
                 src={product.thumbnail}
                 loop="infinite"
-                className="object-cover grayscale hover:grayscale-0 object-left-top absolute h-full w-full inset-0"
+                width="400"
+                height="300"
+                className="object-cover grayscale hover:grayscale-0 object-left-top  h-full w-full inset-0"
                 alt={product.title}
             />
             <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-30 grayscale bg-black pointer-events-none"></div>

@@ -6,6 +6,7 @@ import { getSortedPostsData } from '../../lib/posts.server';
 import { Mail } from 'lucide-react';
 import Scramble from '@/components/hooks/scramble';
 import EndFooter from '@/components/ui/end-footer';
+import Image from 'next/image';
 
 export async function getStaticPaths() {
   const posts = await getSortedPostsData();
@@ -37,7 +38,7 @@ export async function getStaticProps({ params }) {
 }
 
 export default function BlogPostPage({ post }) {
-  const { title, date, author, content, coverImage } = post;
+  const { title, date, author, content, coverImage, description } = post;
 
   const customRenderers = {
     code({ className, children }) {
@@ -57,10 +58,26 @@ export default function BlogPostPage({ post }) {
     <div>
       <Head>
         <title>{title}</title>
+        <meta 
+          name="description" 
+          content={description} 
+        />
+<meta property="og:url" content="https://hackyguru.com/blog" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content="https://opengraph.b-cdn.net/production/images/176bf0b0-b772-4091-a30b-e9f936c12326.png?token=fFBgyZUDL00dYgHEQ3hfdLAyJYYr7Z5p81HrxnZdFE8&height=675&width=1200&expires=33265501980" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain" content="hackyguru.com" />
+<meta property="twitter:url" content="https://hackyguru.com/blog" />
+<meta name="twitter:title" content="Guru's Blog" />
+<meta name="twitter:description" content="Discover the blog articles authored by Kumaraguru across various platforms. This includes technical deep dive ins, tutorials, workshops and more" />
+<meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/176bf0b0-b772-4091-a30b-e9f936c12326.png?token=fFBgyZUDL00dYgHEQ3hfdLAyJYYr7Z5p81HrxnZdFE8&height=675&width=1200&expires=33265501980"></meta>
       </Head>
       <div className="w-full bg-black">
         <div className="relative h-[400px] overflow-hidden">
-          <img
+          <Image
             alt="Cover Image"
             className="h-full w-full object-cover"
             height="400"

@@ -4,6 +4,7 @@ import React, {useState} from 'react'
 import { HoverBorderGradient } from './hover-border-gradient'
 import Link from "next/link"
 import { Button } from "./button"
+import Image from "next/image"
 
 
 
@@ -19,7 +20,7 @@ export default function Navbar() {
                 <div className='flex space-x-5 items-center'>
                 <Link onClick={() => setMenu(0)} href="/">
                     <Avatar className="w-16 h-16 rounded-none">
-                        <AvatarImage className={menu == 0?"shadow-inner shadow-slate-50":""} src="head.gif" />
+                        <Image height={100} width={100} className={menu == 0?"shadow-inner shadow-slate-50":""} src="/head.gif" />
                     </Avatar>
                     </Link>
 

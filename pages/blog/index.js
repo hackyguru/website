@@ -70,6 +70,18 @@ export default function BlogIndex({ allPostsData, allTags }) {
           name="description" 
           content="Discover the blog articles authored by Kumaraguru across various platforms. This includes technical deep dive ins, tutorials, workshops and more" 
         />
+<meta property="og:url" content="https://hackyguru.com/blog" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Guru's Blog" />
+<meta property="og:description" content="Discover the blog articles authored by Kumaraguru across various platforms. This includes technical deep dive ins, tutorials, workshops and more" />
+<meta property="og:image" content="https://opengraph.b-cdn.net/production/images/176bf0b0-b772-4091-a30b-e9f936c12326.png?token=fFBgyZUDL00dYgHEQ3hfdLAyJYYr7Z5p81HrxnZdFE8&height=675&width=1200&expires=33265501980" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:domain" content="hackyguru.com" />
+<meta property="twitter:url" content="https://hackyguru.com/blog" />
+<meta name="twitter:title" content="Guru's Blog" />
+<meta name="twitter:description" content="Discover the blog articles authored by Kumaraguru across various platforms. This includes technical deep dive ins, tutorials, workshops and more" />
+<meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/176bf0b0-b772-4091-a30b-e9f936c12326.png?token=fFBgyZUDL00dYgHEQ3hfdLAyJYYr7Z5p81HrxnZdFE8&height=675&width=1200&expires=33265501980"></meta>
       </Head>
       <div className="flex-grow w-full grainy md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <Spotlight />

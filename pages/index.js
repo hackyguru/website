@@ -304,14 +304,14 @@ export const pictures = [
       "/portfolio8.png",
   },
   {
+    title: "ETHDam, The Netherlands",
+    thumbnail:
+    "/ethdam.gif",
+  },
+  {
     title: "Mount Fuji, Japan",
     thumbnail:
       "/portfolio14.png",
-  },
-  {
-    title: "ETHDam, The Netherlands",
-    thumbnail:
-      "/ethdam.gif",
   },
   {
     title: "Athens, Greece",

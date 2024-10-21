@@ -37,7 +37,7 @@ export default function SpotlightPreview() {
         />
       </div>
       <HeroParallax pictures={pictures} />
-      <div className="mt-40">
+      <div className="">
         <Spotlight
           className="-top-40 left-0 md:left-60 md:-top-20"
           fill="gray"
@@ -202,7 +202,7 @@ export default function SpotlightPreview() {
                 className="text-xl font-mono mt-10 flex">{"/"}
                 <Scramble text="goals and values" /></h1>
               <div className="py-5">
-                <img className="w-full" src="shills.png" />
+              <img className="w-full" src="faith.png" />
               </div>
               <div className="text-sm md:text-lg text-gray-400 mt-5 space-y-5">
                 <h4>
@@ -226,35 +226,12 @@ export default function SpotlightPreview() {
                 <h4>
                   {"> "} I give and take respect regardless of the person&lsquo;s social profile
                 </h4>
-              </div>
-              <h1
-                className="text-xl font-mono mt-10 flex">{"/"}
-                <Scramble text="manifesto" /></h1>
-              <div className="py-5">
-                <img className="w-full" src="manifesto.png" />
-              </div>
-              <div className="text-sm md:text-lg text-gray-400 mt-5 space-y-5">
                 <h4>
-                  {"> "} Experiences over materialism. People over beliefs. Exploration over regrets
+                  {"> "} I equally prioritise principle driven approach : user adoption
                 </h4>
               </div>
             </div>
             <div className="md:w-1/2 text-start">
-
-              <h1
-                className="text-xl font-mono mt-10 flex">{"/"}
-                <Scramble text="faith" /></h1>
-              <div className="py-5">
-                <img className="w-full" src="faith.png" />
-              </div>
-              <div className="text-sm md:text-lg text-gray-400 mt-5 space-y-5">
-                <h4>
-                  {"> "} Deeper your faith, quieter you become
-                </h4>
-                <h4>
-                  {"> "} I&lsquo;m deeply spiritual but i do not associate myself with a specific religious belief
-                </h4>
-              </div>
               <h1
                 className="text-xl font-mono mt-10 flex">{"/"}
                 <Scramble text="sports & art" /></h1>
@@ -275,7 +252,17 @@ export default function SpotlightPreview() {
                   {"> "} Music plays a huge part of my everyday-life
                 </h4>
               </div>
-
+              <h1
+                className="text-xl font-mono mt-10 flex">{"/"}
+                <Scramble text="manifesto" /></h1>
+              <div className="py-5">
+                <img className="w-full" src="manifesto.png" />
+              </div>
+              <div className="text-sm md:text-lg text-gray-400 mt-5 space-y-5">
+                <h4>
+                  {"> "} Experiences over materialism. People over beliefs. Exploration over regrets
+                </h4>
+              </div>
             </div>
           </div>
         </div>

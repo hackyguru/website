@@ -86,7 +86,7 @@ export const HeroParallax = ({
                         />
                     ))}
                 </motion.div>
-                <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+                <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-40">
                     {thirdRow.map((product) => (
                         <ProductCard
                             product={product}
@@ -184,7 +184,7 @@ export const ProductCard = ({
                 x: translate,
             }}
             whileHover={{
-                y: -20,
+               
             }}
             key={product.title}
             className="group/product h-60 w-[20rem] md:h-96 md:w-[30rem] relative flex-shrink-0"

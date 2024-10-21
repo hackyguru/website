@@ -302,9 +302,9 @@ export const pictures = [
       "/portfolio2.png",
   },
   {
-    title: "Denver, USA",
+    title: "Phuket, Thailand",
     thumbnail:
-      "/portfolio1.png",
+      "/portfolio5.png",
   },
   {
     title: "Phuket, Thailand",
@@ -337,14 +337,14 @@ export const pictures = [
       "/portfolio12.png",
   },
   {
+    title: "Denver, USA",
+    thumbnail:
+      "/portfolio1.png",
+  },
+  {
     title: "Munnar, India",
     thumbnail:
       "/portfolio11.png",
-  },
-  {
-    title: "Lisbon, Portugal",
-    thumbnail:
-      "/lisbon.gif",
   },
   {
     title: "Istanbul, Turkey",

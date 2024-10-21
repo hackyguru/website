@@ -14,6 +14,8 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { ArrowRight, ChevronLeft, ChevronRight, PanelRight } from 'lucide-react';
+import { Image, Shimmer } from 'react-shimmer'
+
 
 const POSTS_PER_PAGE = 9;
 

@@ -5,7 +5,7 @@ import talksContent from '@/talks-content/talks-data'
 import Scramble from '@/components/hooks/scramble'
 import Head from 'next/head'
 import EndFooter from '@/components/ui/end-footer'
-import Image from 'next/image'
+import { Image, Shimmer } from 'react-shimmer'
 
 export default function Talks() {
   return (<>
@@ -48,7 +48,7 @@ export default function Talks() {
                 <span className="text-slate-300">{talk.conference}</span>
               </div>
               <div className="mt-4 rounded-none">
-                <Image width={400} height={300} className='rounded-none mb-4 bg-cover' src={talk.image} />
+                <Image  fallback={<Shimmer width={400} height={300} />} width={400} height={300} className='rounded-none mb-4 bg-cover' src={talk.image} />
               </div>
             </div>
             </a>

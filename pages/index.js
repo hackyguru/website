@@ -342,7 +342,7 @@ export const pictures = [
       "/portfolio1.png",
   },
   {
-    title: "Munnar, India",
+    title: "Wayanad, India",
     thumbnail:
       "/portfolio11.png",
   },

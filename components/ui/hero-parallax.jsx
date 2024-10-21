@@ -187,7 +187,7 @@ export const ProductCard = ({
                
             }}
             key={product.title}
-            className="group/product h-40 w-[15rem] md:h-96 md:w-[30rem] relative flex-shrink-0"
+            className="group/product h-48 w-[16rem] md:h-96 md:w-[30rem] relative flex-shrink-0"
         >
 
             <Image

@@ -48,7 +48,7 @@ export default function Talks() {
                 <span className="text-slate-300">{talk.conference}</span>
               </div>
               <div className="mt-4 rounded-none">
-                <Image  fallback={<Shimmer className='opacity-50 mb-4 mr-4' width={400} height={300} />} width={400} height={300} className='rounded-none mb-4 bg-cover' src={talk.image} />
+                <Image fallback={<Shimmer className='opacity-50 mb-4 mr-4' width={400} height={300} />} width={400} height={300} className='rounded-none mb-4 bg-cover' src={talk.image} />
               </div>
             </div>
             </a>

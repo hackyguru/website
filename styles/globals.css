@@ -11,6 +11,14 @@
     @apply text-gray-300;
   }
 
+  .prose a {
+    @apply text-gray-300 font-bold underline hover:text-gray-100;
+  }
+
+  .prose a:hover {
+    @apply text-gray-100;
+  }
+
   .prose h1 {
     @apply text-3xl font-bold mb-4;
     @apply text-gray-300;
@@ -65,6 +73,14 @@
     @apply border px-4 py-2;
     @apply text-gray-300;
 
+  }
+
+  .prose strong {
+    @apply text-gray-300;
+  }
+
+  .prose b {
+    @apply text-gray-300;
   }
 }
 

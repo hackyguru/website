@@ -34,7 +34,11 @@ The current system transfers conversation data from the Omi device to a phone vi
 
 This is where I wanted to plug in Waku's capability of running in resource restricted environments. Waku's peer to peer communication is a great fit for this scenario as it brings in network level anonymity out of the box. And, it worked pretty well for a MVP. Waku could be middleware between the Omi device and the backend server and this way we decouple the identity of the user from the data.
 
-My main concerns were:
+In terms of storage, Omi stores the transcribed conversations on a vector database which allows for semantic search over the data. It uses the OpenAI API to generate embeddings for the conversations and then runs a RAG (Retrieval Augmented Generation) pipeline to generate responses for queries.
+
+We also replaced the RAG pipeline with a LLM from Phala Network's TEE powered inference endpoint. I'm unsure about how this could be useful in terms of increasing user privacy but my friend who works with a TEE startup told me that it's a really cool idea in terms of preserving data privacy and ensuring the AI model's integrity.
+
+Summarizing the above, my main concerns were:
 
 1. *Storage*: Who can access my data and where is it stored?
 2. *Communication*: How is data transferred between the Omi device, phone, and servers?

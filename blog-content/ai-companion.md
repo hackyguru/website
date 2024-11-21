@@ -30,6 +30,8 @@ While Omi is impressive and I'd consider using it daily for memory documentation
 
 In the perspective of minimizing the data risks, local edge node computation is the most ideal solution. But the current state of AI models makes it infeasible. For a $50 device, the computational power is definitely not enough to run a local LLM. The only solution is to relay the data to a server, where the data is stored and processed. The server is not just a single point of failure but also proposes a risk of data interception as the user does not have control over the data.
 
+The current system transfers conversation data from the Omi device to a phone via Bluetooth, then to Omi's backend for processing. This creates vulnerability to MITM attacks and other sorts of data harvesting attacks.
+
 This is where I wanted to plug in Waku's capability of running in resource restricted environments. Waku's peer to peer communication is a great fit for this scenario as it brings in network level anonymity out of the box. And, it worked pretty well for a MVP. Waku could be middleware between the Omi device and the backend server and this way we decouple the identity of the user from the data.
 
 My main concerns were:
@@ -45,10 +47,6 @@ At the hackathon, we aimed to replace the centralized components with Logos tech
 2. *Communication*: Switching from pure-HTTP webhooks to Waku.org, a privacy-focused communication network
 
 Both technologies are in early development - Waku is in beta, and Codex recently launched its first testnet. Given Omi's hardware limitations and Codex's requirements, we chose Storacha as a compromise.
-
-## the importance of privacy
-
-Privacy is crucial for this application. The current system transfers conversation data from the Omi device to a phone via Bluetooth, then to Omi's backend for processing. This creates vulnerability to attacks. Using Waku's anonymous communication helps protect user privacy by separating personal data from user identity.
 
 ## the social element
 

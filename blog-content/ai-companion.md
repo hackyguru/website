@@ -56,13 +56,15 @@ We used Phala Network's Redpill endpoints to analyze conversations and create us
 
 ## frencircle
 
-We named our application "Frencircle" (available at https://github.com/issa-me-sush/eth-bangkok-2024). Though built quickly as a minimum viable product, it won first prize in the Storacha track.
+We named our application "Frencircle" (available at https://github.com/issa-me-sush/eth-bangkok-2024). Though built quickly as a minimum viable product, it won **first prize in the Storacha track**.
 
 ## future plans
 
 I continue to use a customized version of Omi that stores data in my personal database alongside Omi's system. While Frencircle's future is uncertain - it might remain a weekend project or potentially grow with Omi team's support - i would love to experiment more with integration of privacy-focused technologies like Waku, Codex, and Storacha.
 
 here's a 2 minute video (click on the image to view) that we've made to explain the social aspect  (*we made the video in the last 10 minutes before submission deadline, so we've cut short on alot of features*)
+
+> Frencircle - 🏆 First Prize in Storacha Track at ETHGlobal Bangkok
 
 [![pitch video](/blog/frencircle-thumbnail.png)](https://stream.mux.com/CKUHAnE4KDOeGDt17O57rcPrbxXBGOnCOK00qaDrV01v8/high.mp4)
 

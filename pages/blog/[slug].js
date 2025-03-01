@@ -41,17 +41,30 @@ export default function BlogPostPage({ post }) {
   const { title, date, author, content, coverImage, description } = post;
 
   const customRenderers = {
-    code({ className, children }) {
-      const language = className ? className.split('-')[1] : 'text';
+    code({ node, inline, className, children, ...props }) {
+      const match = /language-(\w+)/.exec(className || '');
+      const language = match ? match[1] : '';
+      
+      if (!inline && language) {
+        return (
+          <SyntaxHighlighter
+            style={dracula}
+            language={language}
+            PreTag="div"
+            {...props}
+          >
+            {String(children).replace(/\n$/, '')}
+          </SyntaxHighlighter>
+        );
+      }
+      
+      // For inline code blocks
       return (
-        <SyntaxHighlighter
-          style={dracula}
-          language={language}
-        >
+        <code className={className} {...props}>
           {children}
-        </SyntaxHighlighter>
+        </code>
       );
-    },
+    }
   };
 
   return (

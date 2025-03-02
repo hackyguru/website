@@ -11,6 +11,8 @@ coverImage: "/blog/codex-testnet.png"
 
 Codex Storage is the storage component of the [Logos technology stack](https://logos.co/) - a suite of permissionless networks and protocols that can enable developers to build truly decentralized applications. Being a core contributor at [Institute of Free Technology](https://free.technology), my role as the Developer Relations Lead is to advocate some amazing technologies backed by the original web3 ethos (which is long forgotten in a lot of current ecosystems) and improve the developer experience. This article highlights my thought process behind my recent contributions to Codex and could be useful for devrels who are exploring avenues to make a seamless developer / node operator onboarding.
 
+![Logos stack](/blog/logosstack.png)
+
 ## But, wtf is Codex?
 
 Codex is a Decentralized Storage Network (DSN) which emphasizes on data durability. Although the purpose of Codex could be similar to other existing DSNs like Filecoin/IPFS, Arweave, EthStorage etc., - Codex has a unique approach to solve the data durability problems that exist in the above alternatives. To learn more about Codex, the best material that I would recommend is the [Whitepaper](https://docs.codex.storage/learn/whitepaper).

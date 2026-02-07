@@ -5,6 +5,7 @@ import { HeroParallax } from "@/components/ui/hero-parallax";
 import Link from "next/link";
 import EndFooter from "@/components/ui/end-footer";
 import Head from "next/head";
+import Image from "next/image";
 
 import Scramble from "@/components/hooks/scramble";
 
@@ -22,10 +23,12 @@ export default function SpotlightPreview() {
           </p>
         </div>
         <div className="relative w-12 h-12 shrink-0">
-          <img
+          <Image
             src={image}
+            alt={title}
+            width={48}
+            height={48}
             className="w-full h-full object-contain"
-            alt="logo"
           />
         </div>
       </div>
@@ -115,7 +118,7 @@ export default function SpotlightPreview() {
                 </p>
              </div>
              <div className="flex-grow w-full min-h-[300px] relative rounded-lg overflow-hidden border border-white/10 opacity-60 hover:opacity-100 transition-opacity">
-                 <img src="/art.png" className="absolute inset-0 w-full h-full object-cover" alt="Art" />
+                 <Image src="/art.png" fill className="object-cover" alt="Art" />
              </div>
           </div>
         </div>

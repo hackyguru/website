@@ -10,7 +10,7 @@ const BlogCard = ({ post }) => {
 
     <div className="bg-[#121212] shadow-md overflow-hidden border-white/10 border hover:shadow-zinc-900 group">
       <div className="w-full h-48 relative overflow-hidden">
-        <img src={coverImage} alt={title} className="w-full h-full object-cover" />
+        <Image src={coverImage} alt={title} fill className="object-cover" />
       </div>
       <div className="p-4">
         <h2 className="text-md md:text-xl text-zinc-100 font-bold mb-2 h-16">{title}</h2>

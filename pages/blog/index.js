@@ -4,7 +4,7 @@ import Head from 'next/head';
 import BlogCard from '@/components/ui/blog-card';
 import FilterBlogPosts from '@/components/ui/filter-blog';
 import { getSortedPostsData, getAllTags } from '../../lib/posts.server';
-import { Spotlight } from '@/components/ui/spotlight';
+
 import EndFooter from '@/components/ui/end-footer';
 import Scramble from '@/components/hooks/scramble';
 import { Button } from "@/components/ui/button";
@@ -85,13 +85,12 @@ export default function BlogIndex({ allPostsData, allTags }) {
 <meta name="twitter:description" content="Discover the blog articles authored by Kumaraguru across various platforms. This includes technical deep dive ins, tutorials, workshops and more" />
 <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/176bf0b0-b772-4091-a30b-e9f936c12326.png?token=fFBgyZUDL00dYgHEQ3hfdLAyJYYr7Z5p81HrxnZdFE8&height=675&width=1200&expires=33265501980"></meta>
       </Head>
-      <div className="flex-grow w-full grainy md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
-        <Spotlight />
+      <div className="flex-grow w-full md:items-center md:justify-center bg-[#121212] antialiased relative overflow-hidden">
+
         <div className='flex justify-between mt-32 px-10'>
           <div className=''>
-            <h1 className="text-4xl font-mono mb-8 flex">
-              {"/"}
-              <Scramble text="Blog" />
+            <h1 className="text-2xl md:text-3xl font-mono mb-8 flex text-zinc-100">
+              {"//"} <span className="ml-2"><Scramble text="Blog" /></span>
             </h1>
           </div>
           <FilterBlogPosts
@@ -117,32 +116,32 @@ export default function BlogIndex({ allPostsData, allTags }) {
           </div>
         )}
       </div>
-      <div className="bottom-0 w-full bg-black/80 backdrop-blur-sm py-4">
-        <div className="flex justify-center items-center space-x-4">
+      <div className="bottom-0 w-full bg-[#121212] py-4">
+        <div className="flex justify-center items-center space-x-4 pb-10">
           <button
             onClick={() => paginate(currentPage - 1)}
             disabled={currentPage === 1}
-            className={`border p-2 ${
+            className={`border border-white/10 p-2 text-zinc-400 hover:text-white transition-colors ${
               currentPage === 1 
                 ? "cursor-not-allowed opacity-50" 
-                : "cursor-pointer"
+                : "cursor-pointer hover:bg-white/5"
             }`}
           >
-            <ChevronLeft />
+            <ChevronLeft size={20} />
           </button>
-          <span className="text-white">
+          <span className="text-zinc-400 font-mono text-sm">
             Page {currentPage} of {totalPages}
           </span>
           <button
             onClick={() => paginate(currentPage + 1)}
             disabled={currentPage === totalPages}
-            className={`border p-2 ${
+            className={`border border-white/10 p-2 text-zinc-400 hover:text-white transition-colors ${
               currentPage === totalPages 
                 ? "cursor-not-allowed opacity-50" 
-                : "cursor-pointer"
+                : "cursor-pointer hover:bg-white/5"
             }`}
           >
-            <ChevronRight />
+            <ChevronRight size={20} />
           </button>
         </div>
       <EndFooter />

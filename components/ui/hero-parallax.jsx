@@ -14,7 +14,6 @@ import { Mail, Github, Instagram, Twitter, Discord, Linkedin, LocateFixed, MapPi
 import { Button } from "@/components/ui/button"
 
 import Scramble from "../hooks/scramble";
-
 export const HeroParallax = ({
     pictures,
 }) => {
@@ -38,35 +37,34 @@ export const HeroParallax = ({
         springConfig
     );
     const rotateX = useSpring(
-        useTransform(scrollYProgress, [0, 0.2], [15, 0]),
+        useTransform(scrollYProgress, [0, 0.2], [0, 0]),
         springConfig
     );
     const opacity = useSpring(
-        useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
+        useTransform(scrollYProgress, [0, 0.2], [1, 1]),
         springConfig
     );
     const rotateZ = useSpring(
-        useTransform(scrollYProgress, [0, 0.2], [20, 0]),
+        useTransform(scrollYProgress, [0, 0.2], [0, 0]),
         springConfig
     );
     const translateY = useSpring(
-        useTransform(scrollYProgress, [0, 0.2], [-800, 100]),
+        useTransform(scrollYProgress, [0, 0.2], [-50, 50]),
         springConfig
     );
     return (
         <div
             ref={ref}
-            className="h-[230vh] md:h-[230vh] pt-10 md:py-40  antialiased flex flex-col [perspective:1000px] [transform-style:preserve-3d]"
+            className="py-20 w-full antialiased flex flex-col [perspective:1000px] [transform-style:preserve-3d]"
         >
             <Header />
             <motion.div
                 style={{
                     rotateX,
                     rotateZ,
-                    translateY,
                     opacity,
                 }}
-                className=""
+                className="mt-20"
             >
                 <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-10">
                     {firstRow.map((product) => (
@@ -104,21 +102,10 @@ export const Header = () => {
     return (
         <div className="max-w-7xl relative mx-auto pt-20 md:py-20 px-4 w-full  left-0 top-0">
             
-            <h1 className="text-5xl font-mono md:text-9xl font-bold dark:text-white">
+            <h1 className="text-3xl md:text-5xl font-bold dark:text-white">
             <Scramble  text="@hackyguru" />
             </h1>
-            <div className=" text-xl md:text-2xl mt-10 dark:text-white shadow md:flex hidden">
-                developer relations / core contributor at <a className="underline mr-2 flex space-x-2" href="https://codex.storage"><img className="" src="https://codex.storage/theme/image/logo.svg" />codex</a>, <a className="underline mr-2 flex space-x-2" href="https://waku.org"><img className="" src="https://waku.org/theme/image/logo.svg" />waku</a>&<a className="underline flex space-x-2" href="https://logos.co"><img className="" src="https://logos.co/theme/image/logo.svg" />logos</a>
-            </div>
-            <div className="max-w-4xl text-xl md:text-2xl mt-10 md:mt-4 dark:text-white shadow">
-            cypherpunk - digital nomad - indie hacker - privacy & decentralization maxi
-            </div>
-            <div className="max-w-4xl text-xl md:text-2xl mt-5 dark:text-white shadow md:hidden">
-                developer relations & core contributor at 
-                <div className="flex space-x-2">
-                <img className="" src="https://waku.org/theme/image/logo.svg" /><img className="" src="https://codex.storage/theme/image/logo.svg" /><img className="" src="https://logos.co/theme/image/logo.svg" />
-                </div>
-            </div>
+
             <div className="flex justify-between mt-10 items-center">
             <div className="flex space-x-10">
                 <Link href="mailto:guru@status.im">
@@ -137,39 +124,33 @@ export const Header = () => {
                 <Linkedin />
                 </Link>
             </div>
-            <div className="max-w-4xl text-xl md:text-2xl dark:text-white opacity-60 shadow hidden  md:flex space-x-3 items-center">
+            <div className="max-w-4xl text-lg md:text-xl dark:text-white opacity-60 hidden  md:flex space-x-3 items-center font-sans font-normal">
             <MapPin />
             <h1>
-                london / coimbatore / cyberspace
+                london / cyberspace
                 </h1>
             </div>
             </div>
             
-            <hr className="my-5" />
-
-            <div className="max-w-4xl text-xl md:text-2xl dark:text-white opacity-60 shadow md:hidden  flex space-x-3 items-center">
+            <div className="max-w-4xl text-lg md:text-xl dark:text-white opacity-60 md:hidden  flex space-x-3 items-center mt-5 font-sans font-normal">
             <MapPin />
             <h1>
-                london / coimbatore / cyberspace
+                london / cyberspace
                 </h1>
             </div>
-            <h1 className="mt-10 md:mt-0">Wish to know more?</h1>
-            <div className="flex mt-5 justify-between items-center">
-            <div className="flex">
-            <Link href="/#work" className=" text-xl border p-3 flex cursor-pointer z-50">
-            <h1
-  className="text-xl font-mono flex">{"/"}
-  <Scramble  text="about work" /></h1>
-            </Link>
-            <Link href="/#life" className="ml-5 text-xl border p-3 flex z-50">
-            <h1
-  className="text-xl font-mono flex cursor-pointer">{"/"}
-  <Scramble  text="about life" /></h1>
-            </Link>
-  </div>
-            <div className="text-2xl opacity-60 hidden md:block font-mono">
-            <Scramble  text="kumaraguru / குமரகுரு" /></div>
-  </div>
+
+            <div className=" text-lg md:text-xl mt-10 text-zinc-400 leading-relaxed md:flex hidden font-sans font-normal">
+                i'm leading developer relations at <a className="ml-2 flex space-x-2 items-center text-white" href="https://logos.co"><div className="h-[1.5em] w-[1.5em]"><img className="h-full w-full object-contain" src="/logos.svg" /></div>Logos</a>
+            </div>
+            
+            <div className="max-w-4xl text-lg md:text-xl mt-10 md:mt-4 text-zinc-400 leading-relaxed font-sans font-normal">
+            i  work on the lines of privacy, web3 and artificial intelligence. i believe in empathy - both in technology and life. i also invest in early-stage startups as a partner at <a className="ml-2 inline-flex space-x-2 items-center text-white align-middle" href="https://www.beryl.vc/"><div className="h-[1.5em] w-[1.5em]"><img className="h-full w-full object-contain" src="/walletconnect.svg" /></div><span>Tiro.vc</span></a>
+            </div>
+
+            <div className="max-w-4xl text-lg md:text-xl mt-10 md:mt-4 text-zinc-400 leading-relaxed font-sans font-normal">
+            coding for 10+ years. computer engineer, post-graduate in finance and computing.
+            </div>
+
         </div>
     );
 };
@@ -187,7 +168,7 @@ export const ProductCard = ({
                
             }}
             key={product.title}
-            className="group/product h-52 w-[18rem] md:h-96 md:w-[30rem] relative flex-shrink-0"
+            className="group/product h-52 w-[18rem] md:h-96 md:w-[30rem] relative flex-shrink-0 grainy overflow-hidden"
         >
 
             <Image

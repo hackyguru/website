@@ -1,6 +1,5 @@
 import React from 'react'
-import { PinContainer } from '@/components/ui/3d-pin'
-import { Spotlight } from '@/components/ui/spotlight'
+
 import awardsData from '@/awards-content/awards-data'
 import Scramble from '@/components/hooks/scramble'
 import Head from 'next/head'
@@ -27,31 +26,46 @@ export default function Awards() {
 
       </meta>
     </Head>
-    <div className=" bg-black/[0.96] grainy space-y-6 antialiased bg-grid-white/[0.02] relative overflow-hidden min-h-screen">
-      <Spotlight />
+    <div className=" bg-[#121212] space-y-6 antialiased relative overflow-hidden min-h-screen">
+
       <div className=''>
         <h1
           className="text-4xl font-mono mb-8 mt-32 px-10 flex">{"/"}
           <Scramble text="Awards" /></h1>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 px-4 py-8  md:py-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-4 py-8 md:px-6 md:py-12">
 
         {awardsData.map((award, index) => (
-          <PinContainer key={index} title={award.place} href={award.href}>
-            <a href={award.href}>
-
-              <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem]">
-                <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-100">
+           <a  href={award.href || '#'} key={index} target="_blank" rel="noopener noreferrer" className="block h-full"> 
+            <div className="h-full bg-[#121212] border border-white/10 overflow-hidden hover:border-white/20 transition-colors group flex flex-col">
+              <div className="w-full aspect-video relative overflow-hidden bg-zinc-900">
+                <Image 
+                  fallback={<Shimmer width={400} height={300} className="w-full h-full" />} 
+                  src={award.image} 
+                  alt={award.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-5 flex flex-col flex-grow">
+                <h3 className="font-bold text-base text-zinc-100 mb-2 line-clamp-2">
                   {award.title}
                 </h3>
-                <div className="text-base !m-0 !p-0 font-normal">
-                  <span className="text-slate-300">{award.conference}</span>
+                <p className="text-sm text-zinc-400 mb-4 line-clamp-2">
+                  {award.conference}
+                </p>
+                <div className="mt-auto pt-4 border-t border-white/5 flex items-center justify-between">
+                  <span className="text-xs font-mono text-zinc-500">
+                     {award.place}
+                  </span>
+                  {award.href && (
+                  <span className="text-xs text-zinc-600 group-hover:text-white transition-colors">
+                    ↗
+                  </span>
+                  )}
                 </div>
-                <div className="mt-4 rounded-none">
-                  <Image fallback={<Shimmer className='opacity-50 mb-4 mr-4' width={400} height={300} />} width={400} height={300} className='rounded-none mb-4 bg-cover' src={award.image} />
-                </div>          </div>
-            </a>
-          </PinContainer>
+              </div>
+            </div>
+          </a>
         ))}
       </div>
       <h1 className='text-center mt-10 flex w-full justify-center'>

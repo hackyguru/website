@@ -88,11 +88,11 @@ export default function BlogPostPage({ post }) {
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={`https://hackyguru.com${coverImage}`} />
       </Head>
-      <div className="w-full bg-black">
+      <div className="w-full bg-[#121212] min-h-screen">
         <div className="relative h-[400px] overflow-hidden">
           <Image
             alt="Cover Image"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover opacity-50"
             height="400"
             src={coverImage}
             style={{
@@ -101,38 +101,43 @@ export default function BlogPostPage({ post }) {
             }}
             width="1200"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent grainy" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-[#121212]/50 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 px-4 py-8 md:px-6 lg:px-8">
-            <div className="mx-auto max-w-3xl space-y-2">
-              <h1 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl">
+            <div className="mx-auto max-w-3xl space-y-4">
+              <h1 className="text-3xl font-bold text-white md:text-4xl lg:text-5xl leading-tight">
                 {title}
               </h1>
-              <p className="text-gray-300">By {author} • Published on {date}</p>
+              <div className="flex items-center gap-4 text-zinc-400 font-mono text-sm">
+                 <span>{date}</span>
+                 <span>/</span>
+                 <span>{author}</span>
+              </div>
             </div>
           </div>
         </div>
-        <article className="mx-auto max-w-6xl mt-10 p-7">
+        <article className="mx-auto max-w-3xl mt-10 px-6 pb-20">
           <ReactMarkdown
             components={customRenderers}
-            className="prose prose-lg max-w-none"
+            className="prose prose-invert prose-lg max-w-none prose-headings:text-zinc-100 prose-p:text-zinc-400 prose-li:text-zinc-400 prose-strong:text-zinc-200 prose-a:text-emerald-400 prose-code:text-emerald-300"
           >
             {content}
           </ReactMarkdown>
         </article>
-        <div className='p-10'>
-          <div className='border p-5 flex justify-between items-center'>
-            <h1 className="text-xl font-mono flex">
-              {"/"}
-              <Scramble text="say hi " />
-            </h1>
-            <a 
-              href='https://x.com/hackyguru' 
-              className='bg-white text-black p-3 flex space-x-3 items-center'
-            >
-              <Mail className='w-5 h-5' />
-              <h1>Reach out</h1>
-            </a>
-          </div>
+        <div className="max-w-3xl mx-auto px-6 mb-20">
+             <div className="border-t border-white/10 pt-10">
+                <div className="flex justify-between items-center bg-white/5 p-6 rounded-lg border border-white/5">
+                    <h1 className="text-xl font-mono flex text-zinc-300">
+                    {"/"} <span className="ml-2"><Scramble text="say hi" /></span>
+                    </h1>
+                     <a 
+                    href='https://x.com/hackyguru' 
+                    className='text-zinc-400 hover:text-white flex space-x-2 items-center transition-colors'
+                    >
+                    <Mail className='w-4 h-4' />
+                    <span className="font-mono text-sm">reach_out</span>
+                    </a>
+                </div>
+             </div>
         </div>
         <EndFooter />
       </div>

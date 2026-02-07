@@ -144,7 +144,7 @@ export const Header = () => {
             </div>
             
             <div className="max-w-4xl text-lg md:text-xl mt-10 md:mt-4 text-zinc-400 leading-relaxed font-sans font-normal">
-            i  work on the lines of privacy, web3 and artificial intelligence. i believe in empathy - both in technology and life. i also invest in early-stage startups as a partner at <a className="ml-2 inline-flex space-x-2 items-center text-white align-middle" href="https://www.beryl.vc/"><div className="h-[1.5em] w-[1.5em] relative"><Image alt="beryl vc" fill className="object-contain" src="/walletconnect.svg" /></div><span>Beryl VC</span></a>
+            i  work on the lines of privacy, web3 and artificial intelligence. i believe in empathy - both in technology and life. i also invest in early-stage startups as a partner at <a className="ml-2 inline-flex space-x-2 items-center text-white align-middle" href="https://www.tiro.vc/"><div className="h-[1.5em] w-[1.5em] relative"><Image alt="tiro vc" fill className="object-contain" src="/tiro.svg" /></div><span>Tiro.vc</span></a>
             </div>
 
             <div className="max-w-4xl text-lg md:text-xl mt-10 md:mt-4 text-zinc-400 leading-relaxed font-sans font-normal">

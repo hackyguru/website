@@ -21,7 +21,7 @@ export default function Navbar() {
     const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen)
 
     return (
-        <div className={`w-full transition-all duration-300 ${scrolled ? "bg-[#121212]/80 backdrop-blur-md border-b border-white/10" : "bg-transparent"}`}>
+        <div className={`w-full transition-all duration-300 border-b ${scrolled ? "bg-[#121212]/80 backdrop-blur-md border-white/10" : "bg-transparent border-transparent"}`}>
             <nav className="flex items-center justify-between w-full h-16 px-4 md:px-8">
                 <Link onClick={() => setMenu(0)} href="/" className="">
                     <Avatar className="w-10 h-10 rounded-none">

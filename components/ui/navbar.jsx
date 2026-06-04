@@ -30,12 +30,12 @@ export default function Navbar() {
                 </Link>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex space-x-8 items-center">
+                <div className="hidden md:flex space-x-8 items-center rounded-full border border-white/10 bg-white/5 px-6 py-2 backdrop-blur-md shadow-lg shadow-black/20">
                     <Link onClick={() => setMenu(1)} href="/#about">
                         <h1 className={`text-sm font-mono transition-colors hover:text-white ${menu == 1 ? "text-white" : "text-zinc-400"}`}>about</h1>
                     </Link>
-                    <Link onClick={() => setMenu(2)} href="/blog">
-                        <h1 className={`text-sm font-mono transition-colors hover:text-white ${menu == 2 ? "text-white" : "text-zinc-400"}`}>blog</h1>
+                    <Link onClick={() => setMenu(2)} href="/articles">
+                        <h1 className={`text-sm font-mono transition-colors hover:text-white ${menu == 2 ? "text-white" : "text-zinc-400"}`}>articles</h1>
                     </Link>
                     <Link onClick={() => setMenu(3)} href="/talks">
                         <h1 className={`text-sm font-mono transition-colors hover:text-white ${menu == 3 ? "text-white" : "text-zinc-400"}`}>talks</h1>
@@ -58,8 +58,8 @@ export default function Navbar() {
                         <Link onClick={() => { setMenu(1); setIsMobileMenuOpen(false); }} href="/#about">
                             <h1 className={`text-sm font-mono ${menu == 1 ? "text-white" : "text-zinc-400"}`}>about</h1>
                         </Link>
-                        <Link onClick={() => { setMenu(2); setIsMobileMenuOpen(false); }} href="/blog">
-                            <h1 className={`text-sm font-mono ${menu == 2 ? "text-white" : "text-zinc-400"}`}>blog</h1>
+                        <Link onClick={() => { setMenu(2); setIsMobileMenuOpen(false); }} href="/articles">
+                            <h1 className={`text-sm font-mono ${menu == 2 ? "text-white" : "text-zinc-400"}`}>articles</h1>
                         </Link>
                         <Link onClick={() => { setMenu(3); setIsMobileMenuOpen(false); }} href="/talks">
                             <h1 className={`text-sm font-mono ${menu == 3 ? "text-white" : "text-zinc-400"}`}>talks</h1>

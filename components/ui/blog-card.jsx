@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import ArticleThumbnail from './article-thumbnail';
 import { BackgroundGradient } from './background-gradient';
 import { HoverBorderGradient } from './hover-border-gradient';
 
@@ -10,7 +10,13 @@ const BlogCard = ({ post }) => {
 
     <div className="bg-[#121212] shadow-md overflow-hidden border-white/10 border hover:shadow-zinc-900 group">
       <div className="w-full h-48 relative overflow-hidden">
-        <Image src={coverImage} alt={title} fill className="object-cover" />
+        <ArticleThumbnail
+          src={coverImage}
+          alt={title}
+          seed={slug || title}
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          className="object-cover"
+        />
       </div>
       <div className="p-4">
         <h2 className="text-md md:text-xl text-zinc-100 font-bold mb-2 h-16">{title}</h2>
@@ -32,7 +38,7 @@ const BlogCard = ({ post }) => {
         </div>
       </div>
       <div className="p-4">
-        <Link href={link ? link : `/blog/${slug}`}>
+        <Link href={link ? link : `/articles/${slug}`}>
           <h2 className=" bg-zinc-800 text-zinc-300 px-4 py-2 hover:bg-zinc-200 hover:text-black font-bold w-full text-center block">
             Read More
           </h2>

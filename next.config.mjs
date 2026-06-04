@@ -2,6 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    formats: ['image/avif', 'image/webp'],
+    minimumCacheTTL: 2592000,
     remotePatterns: [
       {
         protocol: 'https',
@@ -20,6 +22,20 @@ const nextConfig = {
         hostname: 'opengraph.b-cdn.net',
       },
     ],
+  },
+  async redirects() {
+    return [
+      {
+        source: '/blog',
+        destination: '/articles',
+        permanent: true,
+      },
+      {
+        source: '/blog/:slug',
+        destination: '/articles/:slug',
+        permanent: true,
+      },
+    ];
   },
 };
 

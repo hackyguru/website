@@ -40,6 +40,12 @@ export async function getStaticProps({ params }) {
 export default function BlogPostPage({ post }) {
   const { title, date, author, content, coverImage, description } = post;
 
+  const ogImage = `https://hackyguru.com/api/og?title=${encodeURIComponent(
+    title
+  )}&author=${encodeURIComponent(author || "")}&date=${encodeURIComponent(
+    date || ""
+  )}`;
+
   const customRenderers = {
     code({ node, inline, className, children, ...props }) {
       const match = /language-(\w+)/.exec(className || '');
@@ -79,14 +85,17 @@ export default function BlogPostPage({ post }) {
         <meta property="og:type" content="article" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={`https://hackyguru.com${coverImage}`} />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={title} />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="hackyguru.com" />
         <meta property="twitter:url" content={`https://hackyguru.com/articles/${post.slug}`} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={`https://hackyguru.com${coverImage}`} />
+        <meta name="twitter:image" content={ogImage} />
       </Head>
       <div className="w-full bg-[#121212] min-h-screen">
         <div className="relative h-[400px] overflow-hidden">

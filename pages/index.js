@@ -73,7 +73,7 @@ const pastRoles = [
 const RoleCard = ({ title, image, description }) => (
   <div className="group rounded-xl border border-white/10 bg-white/5 p-3 transition-colors hover:border-white/20 hover:bg-white/10">
     <div className="flex items-center justify-between gap-3">
-      <div className="flex-1">
+      <div className="min-w-0 flex-1">
         <h3 className="text-sm font-semibold text-gray-100 transition-colors group-hover:text-white">
           {title}
         </h3>
@@ -184,10 +184,10 @@ export default function NewHome() {
         <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#121212] to-transparent" />
       </section>
 
-      <main className="relative z-10 flex min-h-screen flex-col justify-center px-8 py-16 md:px-16 lg:px-24 xl:px-32">
+      <main className="relative z-10 flex min-h-screen flex-col justify-center px-6 pb-16 pt-28 sm:px-8 md:px-16 md:pt-32 lg:px-24 xl:px-32">
         {/* Left — text */}
-        <section className="flex flex-col lg:max-w-2xl">
-          <h1 className="font-mono text-5xl font-bold text-zinc-100 md:text-6xl">
+        <section className="flex w-full min-w-0 flex-col lg:max-w-2xl">
+          <h1 className="font-mono text-4xl font-bold text-zinc-100 sm:text-5xl md:text-6xl">
             <Scramble text="@hackyguru" />
           </h1>
 
@@ -197,9 +197,24 @@ export default function NewHome() {
             travelled to 40+ countries and a lifelong learner at heart.
           </p>
 
-                    <p className="mt-4 flex items-center gap-2 text-base leading-relaxed text-zinc-400 md:text-lg">
-            <MapPin className="h-5 w-5" /> london
-          </p>
+          <div className="mt-4 flex items-center justify-between gap-4">
+            <p className="flex items-center gap-2 text-base leading-relaxed text-zinc-400 md:text-lg">
+              <MapPin className="h-5 w-5" /> london
+            </p>
+            {/* socials — inline to the right of location on mobile */}
+            <div className="flex items-center gap-5 md:hidden">
+              {socials.map(({ href, label, Icon }) => (
+                <Link
+                  key={label}
+                  href={href}
+                  aria-label={label}
+                  className="text-zinc-400 transition-colors hover:text-white"
+                >
+                  <Icon className="h-5 w-5" />
+                </Link>
+              ))}
+            </div>
+          </div>
 
 
           <div className="mt-12">
@@ -224,7 +239,7 @@ export default function NewHome() {
             </div>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-10 hidden md:block">
             <div className="flex flex-wrap gap-6">
               {socials.map(({ href, label, Icon }) => (
                 <Link

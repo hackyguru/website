@@ -1,7 +1,6 @@
 import { Sparkles } from 'lucide-react';
 
-const DEFAULT_NOTE =
-  'Parts of this article were drafted with the help of AI. Every claim here was reviewed and edited by the author.';
+const DEFAULT_NOTE = 'Parts of this article were drafted with the help of AI.';
 
 // Rendered above the article body when a post sets `aiAssisted: true` in its
 // frontmatter. `aiNote` overrides the default wording per post.

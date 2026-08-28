@@ -135,4 +135,4 @@ The interesting constraint across all of it: any mechanism you add has to work w
 
 ---
 
-*The full source lives in my Logos workshop series. If you build something on top of this, or find a hole in the threat model, I would genuinely like to hear about it.*
+*The full source lives at [github.com/hackyguru/xenia](https://github.com/hackyguru/xenia). If you build something on top of this, or find a hole in the threat model, I would genuinely like to hear about it.*

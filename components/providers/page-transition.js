@@ -60,12 +60,21 @@ export function PageTransitionProvider({ children }) {
         return;
       }
 
+      // Let the browser handle modified clicks (open in new tab/window).
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) {
+        return;
+      }
+
       e.preventDefault();
       navigate(href);
     };
 
-    document.addEventListener("click", handleClick);
-    return () => document.removeEventListener("click", handleClick);
+    // Capture phase: next/link bails out when the event is already
+    // defaultPrevented, so this must run before its own click handler.
+    // Otherwise Link navigates too, double-pushing every link and pushing
+    // the current URL again when you click the link for the page you're on.
+    document.addEventListener("click", handleClick, true);
+    return () => document.removeEventListener("click", handleClick, true);
   }, [navigate]);
 
   const shouldBlur = isTransitioning || isEntering;

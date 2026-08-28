@@ -5,6 +5,7 @@ date: "2026-08-28"
 author: "guru"
 tags: ["AI", "Web3", "Privacy", "Technical"]
 coverImage: "/blog/xenia.png"
+aiAssisted: true
 ---
 
 > Disclaimer : The content here is based on my personal opinion and does not represent the collective opinion of any organization.

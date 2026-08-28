@@ -7,6 +7,7 @@ import { Mail } from 'lucide-react';
 import Scramble from '@/components/hooks/scramble';
 import EndFooter from '@/components/ui/end-footer';
 import ArticleThumbnail from '@/components/ui/article-thumbnail';
+import AiDisclosure from '@/components/ui/ai-disclosure';
 
 export async function getStaticPaths() {
   const posts = await getSortedPostsData();
@@ -38,7 +39,7 @@ export async function getStaticProps({ params }) {
 }
 
 export default function BlogPostPage({ post }) {
-  const { title, date, author, content, coverImage, description } = post;
+  const { title, date, author, content, coverImage, description, aiAssisted, aiNote } = post;
 
   const ogImage = `https://hackyguru.com/api/og?title=${encodeURIComponent(
     title
@@ -121,6 +122,7 @@ export default function BlogPostPage({ post }) {
           </div>
         </div>
         <article className="mx-auto max-w-3xl mt-10 px-6 pb-20">
+          {aiAssisted && <AiDisclosure note={aiNote} />}
           <ReactMarkdown
             components={customRenderers}
             className="prose prose-invert prose-lg max-w-none prose-headings:text-zinc-100 prose-p:text-zinc-400 prose-li:text-zinc-400 prose-strong:text-zinc-200 prose-a:text-emerald-400 prose-code:text-emerald-300"

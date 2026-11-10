@@ -8,8 +8,8 @@ const BlogCard = ({ post }) => {
 
   return (
 
-    <div className="bg-[#121212] shadow-md overflow-hidden border-white/10 border hover:shadow-zinc-900 group">
-      <div className="w-full h-48 relative overflow-hidden">
+    <div className="bg-[#121212] shadow-md overflow-hidden border-white/10 border hover:shadow-zinc-900 group flex flex-col h-full min-w-0">
+      <div className="w-full h-48 relative overflow-hidden shrink-0">
         <ArticleThumbnail
           src={coverImage}
           alt={title}
@@ -18,18 +18,18 @@ const BlogCard = ({ post }) => {
           className="object-cover"
         />
       </div>
-      <div className="p-4">
-        <h2 className="text-md md:text-xl text-zinc-100 font-bold mb-2 h-16">{title}</h2>
-        <p className="text-zinc-400 text-sm md:mb-4 h-20 leading-relaxed">{description}</p>
-        <div className="md:flex items-center justify-between">
+      <div className="p-4 flex flex-col flex-1 min-w-0">
+        <h2 className="text-base md:text-xl text-zinc-100 font-bold mb-2 line-clamp-2 md:min-h-[3.5rem] break-words">{title}</h2>
+        <p className="text-zinc-400 text-sm mb-4 leading-relaxed line-clamp-3 md:min-h-[4.5rem] break-words">{description}</p>
+        <div className="mt-auto flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div>
             <span className="text-zinc-500 text-sm font-mono">{date} - by {author}</span>
           </div>
-          <div className='mt-4 md:mt-0'>
+          <div className='flex flex-wrap gap-2'>
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="border-white/10 border text-zinc-500 px-2 py-1 mr-2 text-sm font-mono"
+                className="border-white/10 border text-zinc-500 px-2 py-1 text-sm font-mono"
               >
                 {tag}
               </span>
@@ -37,7 +37,7 @@ const BlogCard = ({ post }) => {
           </div>
         </div>
       </div>
-      <div className="p-4">
+      <div className="p-4 pt-0">
         <Link href={link ? link : `/articles/${slug}`}>
           <h2 className=" bg-zinc-800 text-zinc-300 px-4 py-2 hover:bg-zinc-200 hover:text-black font-bold w-full text-center block">
             Read More

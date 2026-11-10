@@ -104,7 +104,7 @@ export default function BlogIndex({ allPostsData, allTags }) {
             <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-white"></div>
           </div>
         ) : (
-          <div className="grid z-50 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-10">
+          <div className="grid z-50 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 sm:p-6 md:p-10">
             {currentPosts.map((post) => (
               <BlogCard 
                 className="z-20" 

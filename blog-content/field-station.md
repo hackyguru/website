@@ -33,7 +33,7 @@ Reviewing more than 150 applications was a lot of work, but it was worth it. We 
 
 I'll be honest. When I met everyone in person on day one, I was nervous. With only eight days together, I didn't know whether people from such different disciplines would actually click and cross-pollinate ideas, or whether they'd stay in their own lanes.
 
-Demo day showed my worry was misplaced. [Add 2–3 concrete examples here: a project that came out of an unlikely collaboration, a team that formed mid-week, or something that got built on top of Logos.] Seeing an architect and a protocol developer sketch out the same problem from opposite ends is exactly why you put these people in one place.
+Demo day showed my worry was misplaced. Seeing an architect and a protocol developer sketch out the same problem from opposite ends is exactly why you put these people in one place.
 
 The lesson I took away is that diversity isn't a nice-to-have for these experiments. It's what makes them work. A room full of protocol engineers will build better protocols. A room full of engineers, biologists, architects and philosophers will ask what the protocol is for, and that's the question that matters most.
 
@@ -97,7 +97,7 @@ Field Station changed how I think about my own job.
 
 **Non-developers are part of the developer ecosystem.** Some of the sharpest questions about privacy and sovereignty came from the architects, biologists and philosophers, not the engineers. They're the ones who'll define what gets built, even if someone else writes the code. Developer relations for a sovereign stack has to make room for them.
 
-**Feedback is better in person.** Async feedback forms tell you what went wrong. Watching someone struggle through your onboarding over their shoulder tells you why. [Add one specific piece of feedback from the cohort that's shaping what you're working on now.]
+**Feedback is better in person.** Async feedback forms tell you what went wrong. Watching someone struggle through your onboarding over their shoulder tells you why.
 
 **Use cases come from lived experience.** The best ideas I heard all week didn't come from people asking "what can I build with Logos?" They came from people saying "this is a problem in my community" and then asking whether Logos could help. That's the order we should be encouraging.
 

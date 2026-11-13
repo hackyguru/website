@@ -45,7 +45,7 @@ export default function BlogPostPage({ post }) {
     title
   )}&author=${encodeURIComponent(author || "")}&date=${encodeURIComponent(
     date || ""
-  )}`;
+  )}${coverImage ? `&image=${encodeURIComponent(coverImage)}` : ""}`;
 
   const customRenderers = {
     code({ node, inline, className, children, ...props }) {
